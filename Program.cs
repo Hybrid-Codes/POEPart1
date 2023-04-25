@@ -194,7 +194,7 @@ namespace POEPart1
                         break;
 
 
-                    case "exit":
+                    case "exit": // exit
                     {
                         exit = true;
                         Console.WriteLine("Program exited successfully!");
