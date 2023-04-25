@@ -1,0 +1,15 @@
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\obj\Debug\net7.0\POEPart1.csproj.AssemblyReference.cache
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\obj\Debug\net7.0\POEPart1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\obj\Debug\net7.0\POEPart1.AssemblyInfoInputs.cache
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\obj\Debug\net7.0\POEPart1.AssemblyInfo.cs
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\obj\Debug\net7.0\POEPart1.csproj.CoreCompileInputs.cache
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\bin\Debug\net7.0\POEPart1.exe
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\bin\Debug\net7.0\POEPart1.deps.json
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\bin\Debug\net7.0\POEPart1.runtimeconfig.json
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\bin\Debug\net7.0\POEPart1.dll
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\bin\Debug\net7.0\POEPart1.pdb
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\obj\Debug\net7.0\POEPart1.dll
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\obj\Debug\net7.0\refint\POEPart1.dll
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\obj\Debug\net7.0\POEPart1.pdb
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\obj\Debug\net7.0\POEPart1.genruntimeconfig.cache
+C:\Users\robbi\Desktop\UNI\Bachelors of Computer & Information Sciences\Year 2\Semester 1\Programming 2A (PROG6221)\Rider Programming 2A\Assessments\POEPart1\obj\Debug\net7.0\ref\POEPart1.dll

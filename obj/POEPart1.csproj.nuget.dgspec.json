@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\robbi\\Desktop\\UNI\\Bachelors of Computer & Information Sciences\\Year 2\\Semester 1\\Programming 2A (PROG6221)\\Rider Programming 2A\\Assessments\\POEPart1\\POEPart1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\robbi\\Desktop\\UNI\\Bachelors of Computer & Information Sciences\\Year 2\\Semester 1\\Programming 2A (PROG6221)\\Rider Programming 2A\\Assessments\\POEPart1\\POEPart1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\robbi\\Desktop\\UNI\\Bachelors of Computer & Information Sciences\\Year 2\\Semester 1\\Programming 2A (PROG6221)\\Rider Programming 2A\\Assessments\\POEPart1\\POEPart1.csproj",
+        "projectName": "POEPart1",
+        "projectPath": "C:\\Users\\robbi\\Desktop\\UNI\\Bachelors of Computer & Information Sciences\\Year 2\\Semester 1\\Programming 2A (PROG6221)\\Rider Programming 2A\\Assessments\\POEPart1\\POEPart1.csproj",
+        "packagesPath": "C:\\Users\\robbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\robbi\\Desktop\\UNI\\Bachelors of Computer & Information Sciences\\Year 2\\Semester 1\\Programming 2A (PROG6221)\\Rider Programming 2A\\Assessments\\POEPart1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\robbi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
