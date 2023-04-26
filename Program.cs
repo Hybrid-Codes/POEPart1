@@ -45,20 +45,20 @@ namespace POEPart1
                             {
                                 case "teaspoons":
                                 {
-                                    
+                                    recipe.Convert();
                                     
                                 }
                                     break;
                                 
                                 case "tablespoons":
                                 {
-                                    
+                                    recipe.Convert();
                                 }
                                     break;
                                 
                                 case "cups":
                                 {
-                                    
+                                    recipe.Convert();
                                 }
                                     break;
 
