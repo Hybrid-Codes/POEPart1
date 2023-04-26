@@ -72,170 +72,130 @@ namespace POEPart1
 
                         break;
 
-                    case "scale":
-                        Console.WriteLine("Enter the scale: (half, double, triple)");
-                        string input = Console.ReadLine();
-                        switch (input)
+                   case "scale":
+                        if (recipe != null)
                         {
-                            case "half":
+                            Console.WriteLine("Enter the scale: (half, double, triple)");
+                            string input = Console.ReadLine();
+                            switch (input)
                             {
-                                if (recipe != null)
+                                case "half":
                                 {
                                     recipe.Scale(0.5);
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("Recipe scaled by a factor of 0,5 or half.");
                                     Console.ResetColor();
                                 }
-                                else
-                                {
-                                    Console.ForegroundColor = ConsoleColor.Red;
-                                    Console.WriteLine("Can't scale when there are no quantities to work with!");
-                                    Console.ResetColor();
-                                }
-                            }
-                                break;
+                                    break;
 
-                            case "double":
-                            {
-                                if (recipe != null)
+                                case "double":
                                 {
                                     recipe.Scale(2);
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("Recipe scaled by a factor of 2 or double.");
                                     Console.ResetColor();
                                 }
-                                else
-                                {
-                                    Console.ForegroundColor = ConsoleColor.Red;
-                                    Console.WriteLine("Can't scale when there are no quantities to work with!");
-                                    Console.ResetColor();
-                                }
-                            }
-                                break;
+                                    break;
 
-                            case "triple":
-                            {
-                                if (recipe != null)
+                                case "triple":
                                 {
                                     recipe.Scale(3);
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("Recipe scaled by a factor of 3 or triple.");
                                     Console.ResetColor();
                                 }
-                                else
-                                {
-                                    Console.ForegroundColor = ConsoleColor.Red;
-                                    Console.WriteLine("Can't scale when there are no quantities to work with!");
-                                    Console.ResetColor();
-                                }
+                                    break;
                             }
-                                break;
                         }
-
-
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Can't scale when there are no quantities to work with!");
+                            Console.ResetColor();
+                        }
                         break;
 
 
                     case "reset":
-
-                        Console.WriteLine(
-                            "Enter reset amount - please reset by the amount that you scaled by: (half, double, triple)");
-                        string capture = Console.ReadLine();
-
-                        switch (capture)
+                        
+                        if (recipe != null)
                         {
-                            case "half":
+                            Console.WriteLine("Enter reset amount - please reset by the amount that you scaled by: (half, double, triple)");
+                            string capture = Console.ReadLine();
+                            
+                            switch (capture)
                             {
-                                if (recipe != null)
+                                case "half":
                                 {
                                     recipe.Reset(0.5);
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("Recipe divided/reset by 0,5 or half.");
                                     Console.ResetColor();
                                 }
-                                else
-                                {
-                                    Console.ForegroundColor = ConsoleColor.Red;
-                                    Console.WriteLine("Can't reset when there are no quantities to work with!");
-                                    Console.ResetColor();
-                                }
-                            }
-                                break;
+                                    break;
 
-                            case "double":
-                            {
-                                if (recipe != null)
+                                case "double":
                                 {
                                     recipe.Reset(2);
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("Recipe divided/reset by 3 or triple.");
                                     Console.ResetColor();
                                 }
-                                else
-                                {
-                                    Console.ForegroundColor = ConsoleColor.Red;
-                                    Console.WriteLine("Can't reset when there are no quantities to work with!");
-                                    Console.ResetColor();
-                                }
-                            }
-                                break;
+                                    break;
 
-                            case "triple":
-                            {
-                                if (recipe != null)
+                                case "triple":
                                 {
                                     recipe.Reset(3);
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("Recipe divided/reset by 2 or double.");
                                     Console.ResetColor();
                                 }
-                                else
-                                {
-                                    Console.ForegroundColor = ConsoleColor.Red;
-                                    Console.WriteLine("Can't reset when there are no quantities to work with!");
-                                    Console.ResetColor();
-                                }
+                                    break;
                             }
-                                break;
                         }
-
-
-                        break;
-
-
-                    case "clear":
-                        Console.WriteLine("Please confirm before clearing (yes, no)");
-                        string confirmClear = Console.ReadLine();
-                        switch (confirmClear)
+                        else
                         {
-                            case "yes":
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Can't scale when there are no quantities to work with!");
+                            Console.ResetColor();
+                        }
+                        break;
+                    
+                    
+                    case "clear":
+                        
+                        if (recipe != null)
+                        {
+                            Console.WriteLine("Please confirm before clearing (yes, no)");
+                            string confirmClear = Console.ReadLine();
+                            switch (confirmClear)
                             {
-                                if (recipe != null)
+                                case "yes":
                                 {
                                     recipe.Clear();
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("All recipe's cleared!");
                                     Console.ResetColor();
                                 }
-                                else
+                                    break;
+
+                                case "no":
                                 {
-                                    Console.ForegroundColor = ConsoleColor.Red;
-                                    Console.WriteLine("Can't clear when there is no recipe!");
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("No recipe's were cleared! Going back to menu!");
                                     Console.ResetColor();
+                                    continue;
                                 }
                             }
-                                break;
-
-                            case "no":
-                            {
-                                Console.ForegroundColor = ConsoleColor.Green;
-                                Console.WriteLine("No recipe's were cleared! Going back to menu!");
-                                Console.ResetColor();
-                                continue;
-                            }
                         }
-
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Cant clear when there is no recipe!");
+                            Console.ResetColor();
+                        }
                         break;
+                    
 
                     case "exit":
                     {
