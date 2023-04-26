@@ -51,6 +51,12 @@
                 ingredient.Quantity *= (decimal)factor;
             }
         }
+        public void Convert()
+        {
+            double teaSpoon = 0;
+            double tableSpoon = 0;
+            double cup = 0;
+        }
 
 
         // Method to reset the recipe quantities to their original values
