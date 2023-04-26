@@ -39,9 +39,30 @@ namespace POEPart1
                             Console.WriteLine($"Enter ingredient {i + 1} quantity:");
                             decimal quantity = decimal.Parse(Console.ReadLine());
 
-                            Console.WriteLine($"Enter ingredient {i + 1} unit:");
+                            Console.WriteLine($"Enter ingredient {i + 1} unit of measurement (teaspoons, tablespoons, cups):");
                             string unit = Console.ReadLine();
+                            switch (unit)
+                            {
+                                case "teaspoons":
+                                {
+                                    
+                                    
+                                }
+                                    break;
+                                
+                                case "tablespoons":
+                                {
+                                    
+                                }
+                                    break;
+                                
+                                case "cups":
+                                {
+                                    
+                                }
+                                    break;
 
+                            }
                             recipe.SetIngredient(i, name, quantity, unit);
                         }
 
