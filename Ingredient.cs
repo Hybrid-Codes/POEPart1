@@ -4,6 +4,8 @@
     // Ingredient class representing an ingredient in a recipe
     class Ingredient
     {
+
+       
         public string Name { get; set; }     // Name of the ingredient
         public decimal Quantity { get; set; }    // Quantity of the ingredient
         public string Unit { get; set; }     // Unit of measurement for the ingredient

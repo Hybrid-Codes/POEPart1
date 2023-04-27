@@ -7,38 +7,85 @@ namespace POEPart1
     public class Program
     {
         // Main method
-        static void Main(string[] args)
+        static void Main(string[] ags)
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Welcome to RecipeApp!");
+            Console.ResetColor();
 
-            Recipe recipe = null; // Initialize the recipe object to null
+            Recipe recipe = null; // Initialize the recipe object to null 
             bool exit = false; // Initialize the exit flag to false
 
             while (!exit) // Loop until the exit flag is set to true
             {
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("Enter a command (new, display, scale, reset, clear, exit):");
+                Console.ResetColor();
 
                 string command = Console.ReadLine(); // Read the user's command
 
                 switch (command)
                 {
                     case "new":
+                        Console.WriteLine("Enter the name of the recipe: ");
+                        string rName = Console.ReadLine();
+                        
                         Console.WriteLine("Enter the number of ingredients:");
-                        int numIngredients = int.Parse(Console.ReadLine());
+                        int numIngredients;
+                        string line = Console.ReadLine();
+                        
+                        try
+                        {
+                           numIngredients = Int32.Parse(line);
+                        }
+                        catch (FormatException)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("{0} is not an number!", line);
+                            Console.ResetColor();
+                            goto case "new";
+                        }
 
                         Console.WriteLine("Enter the number of steps:");
-                        int numSteps = int.Parse(Console.ReadLine());
+                        int numSteps;
+                        string inputSteps = Console.ReadLine();
+                        
+                        try
+                        {
+                            numSteps = Int32.Parse(inputSteps);
+                        }
+                        catch (FormatException)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("{0} is not a number!", inputSteps);
+                            Console.ResetColor();
+                            goto case "new";
+                        }
 
                         recipe = new Recipe(numIngredients, numSteps);
-
+    
                         for (int i = 0; i < numIngredients; i++)
                         {
                             Console.WriteLine($"Enter ingredient {i + 1} name:");
                             string name = Console.ReadLine();
 
                             Console.WriteLine($"Enter ingredient {i + 1} quantity:");
-                            decimal quantity = decimal.Parse(Console.ReadLine());
+                            decimal quantity;
+                            string inputQuantity = Console.ReadLine();
 
+                            try
+                            {
+                                quantity = decimal.Parse(inputQuantity);
+                            }
+                            catch (FormatException)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("{0} is not a number!", inputQuantity);
+                                Console.ResetColor();
+                                goto case "new";
+                            }
+                            
+                            
                             Console.WriteLine($"Enter ingredient {i + 1} unit of measurement (teaspoons, tablespoons, cups):");
                             string unit = Console.ReadLine();
                             switch (unit)

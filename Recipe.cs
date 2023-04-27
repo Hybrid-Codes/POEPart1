@@ -13,9 +13,10 @@
             ingredients = new Ingredient[numIngredients];
             steps = new Step[numSteps];
         }
-
+        
+        
         // Method to set the ingredient at the specified index with the specified name, quantity, and unit
-        public void SetIngredient(int index, string name, decimal quantity, string unit)
+        public void SetIngredient(int index,  string name,  decimal quantity, string unit)
         {
             ingredients[index] = new Ingredient { Name = name, Quantity = quantity, Unit = unit };
         }
@@ -30,6 +31,7 @@
         // Method to display the recipe information, including the ingredients and steps
         public void Display()
         {
+           
             Console.WriteLine("Ingredients:");
             foreach (var ingredient in ingredients)
             {
@@ -56,6 +58,8 @@
             double teaSpoon = 0;
             double tableSpoon = 0;
             double cup = 0;
+            
+            
         }
 
 
