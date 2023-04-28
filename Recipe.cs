@@ -4,8 +4,8 @@
     // Recipe class representing a recipe with ingredients and steps
     class Recipe
     {
-        private Ingredient[] ingredients;     // Array of ingredients in the recipe
-        private Step[] steps;      // Array of steps in the recipe
+        private Ingredient[] ingredients;     // Array of ingredients in the recipe which references the Ingredient class
+        private Step[] steps;      // Array of steps in the recipe  which references the Ingredient class
 
         // Constructor to create a new Recipe object with the specified number of ingredients and steps
         public Recipe(int numIngredients, int numSteps)
