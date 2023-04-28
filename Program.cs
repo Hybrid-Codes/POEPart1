@@ -21,7 +21,7 @@ namespace POEPart1
                 Console.WriteLine("Enter a command (new, display, scale, reset, clear, exit):");
                 Console.ResetColor();
 
-                string command = Console.ReadLine(); // Read the user's command
+                string command = Console.ReadLine(); // Read the user's command input
 
                 switch (command)
                 {
