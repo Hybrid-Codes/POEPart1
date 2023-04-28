@@ -44,14 +44,14 @@
                 Console.WriteLine($"{i + 1}. {steps[i]}");
             }
         }
-        // public void Convert()
-        // {
-        //     double teaSpoon = 0;
-        //     double tableSpoon = 0;
-        //     double cup = 0;
-        //     
-        //     
-        // }
+        public void Convert()
+        {
+            double teaSpoon = 0;
+            double tableSpoon = 0;
+            double cup = 0;
+            
+            
+        }
         
         // Method to scale the recipe quantities by the specified factor
         public void Scale(double factor)
