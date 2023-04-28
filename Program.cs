@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 
 namespace POEPart1
 {
@@ -27,11 +26,15 @@ namespace POEPart1
                 switch (command)
                 {
                     case "new":
+                        Console.ForegroundColor = ConsoleColor.Cyan;
                         Console.WriteLine("Enter the name of the recipe: ");
+                        Console.ResetColor();
                         string rName = Console.ReadLine();
                         
+                        Console.ForegroundColor = ConsoleColor.Cyan;
                         Console.WriteLine("Enter the number of ingredients:");
-                        int numIngredients = 0;
+                        Console.ResetColor();
+                        int numIngredients;
                         string line = Console.ReadLine();
                         
                         try
@@ -46,7 +49,9 @@ namespace POEPart1
                             goto case "new";
                         }
 
+                        Console.ForegroundColor = ConsoleColor.Cyan;
                         Console.WriteLine("Enter the number of steps:");
+                        Console.ResetColor();
                         int numSteps;
                         string inputSteps = Console.ReadLine();
                         
@@ -66,10 +71,14 @@ namespace POEPart1
     
                         for (int i = 0; i < numIngredients; i++)
                         {
+                            Console.ForegroundColor = ConsoleColor.Cyan;
                             Console.WriteLine($"Enter ingredient {i + 1} name:");
+                            Console.ResetColor();
                             string name = Console.ReadLine();
 
+                            Console.ForegroundColor = ConsoleColor.Cyan;
                             Console.WriteLine($"Enter ingredient {i + 1} quantity:");
+                            Console.ResetColor();
                             decimal quantity;
                             string inputQuantity = Console.ReadLine();
 
@@ -85,30 +94,10 @@ namespace POEPart1
                                 goto case "new";
                             }
                             
-                            
+                            Console.ForegroundColor = ConsoleColor.Cyan;
                             Console.WriteLine($"Enter ingredient {i + 1} unit of measurement (teaspoons, tablespoons, cups):");
+                            Console.ResetColor();
                             string unit = Console.ReadLine();
-                            switch (unit)
-                            {
-                                case "teaspoons":
-                                {
-                                    // recipe.Convert();
-                                    
-                                }
-                                    break;
-                                
-                                case "tablespoons":
-                                {
-                                    // recipe.Convert();
-                                }
-                                    break;
-                                
-                                case "cups":
-                                {
-                                    // recipe.Convert();
-                                }
-                                    break;
-                            }
                            
                            
                             recipe.SetIngredient(i, name, quantity, unit);
@@ -116,7 +105,9 @@ namespace POEPart1
 
                         for (int i = 0; i < numSteps; i++)
                         {
+                            Console.ForegroundColor = ConsoleColor.Cyan;
                             Console.WriteLine($"Enter step {i + 1} description:");
+                            Console.ResetColor();
                             string description = Console.ReadLine();
 
                             recipe.SetStep(i, description);
@@ -144,7 +135,9 @@ namespace POEPart1
                    case "scale":
                         if (recipe != null)
                         {
+                            Console.ForegroundColor = ConsoleColor.Cyan;
                             Console.WriteLine("Enter the scale: (half, double, triple)");
+                            Console.ResetColor();
                             string input = Console.ReadLine();
                             switch (input)
                             {
@@ -189,7 +182,9 @@ namespace POEPart1
                         
                         if (recipe != null)
                         {
+                            Console.ForegroundColor = ConsoleColor.Cyan;
                             Console.WriteLine("Enter reset amount - please reset by the amount that you scaled by: (half, double, triple)");
+                            Console.ResetColor();
                             string capture = Console.ReadLine();
                             
                             switch (capture)
@@ -235,7 +230,9 @@ namespace POEPart1
                         
                         if (recipe != null)
                         {
+                            Console.ForegroundColor = ConsoleColor.Cyan;
                             Console.WriteLine("Please confirm before clearing (yes, no)");
+                            Console.ResetColor();
                             string confirmClear = Console.ReadLine();
                             switch (confirmClear)
                             {
