@@ -10,7 +10,7 @@ namespace POEPart1
         static void Main(string[] ags)
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("Welcome to RecipeApp!");
+            Console.WriteLine($"Welcome to RecipeApp!");
             Console.ResetColor();
 
             Recipe recipe = null; // Initialize the recipe object to null 
@@ -31,7 +31,7 @@ namespace POEPart1
                         string rName = Console.ReadLine();
                         
                         Console.WriteLine("Enter the number of ingredients:");
-                        int numIngredients;
+                        int numIngredients = 0;
                         string line = Console.ReadLine();
                         
                         try
@@ -92,24 +92,25 @@ namespace POEPart1
                             {
                                 case "teaspoons":
                                 {
-                                    recipe.Convert();
+                                    // recipe.Convert();
                                     
                                 }
                                     break;
                                 
                                 case "tablespoons":
                                 {
-                                    recipe.Convert();
+                                    // recipe.Convert();
                                 }
                                     break;
                                 
                                 case "cups":
                                 {
-                                    recipe.Convert();
+                                    // recipe.Convert();
                                 }
                                     break;
-
                             }
+                           
+                           
                             recipe.SetIngredient(i, name, quantity, unit);
                         }
 
@@ -206,7 +207,7 @@ namespace POEPart1
                                 {
                                     recipe.Reset(2);
                                     Console.ForegroundColor = ConsoleColor.Green;
-                                    Console.WriteLine("Recipe divided/reset by 3 or triple.");
+                                    Console.WriteLine("Recipe divided/reset by 2 or double.");
                                     Console.ResetColor();
                                 }
                                     break;
@@ -215,7 +216,7 @@ namespace POEPart1
                                 {
                                     recipe.Reset(3);
                                     Console.ForegroundColor = ConsoleColor.Green;
-                                    Console.WriteLine("Recipe divided/reset by 2 or double.");
+                                    Console.WriteLine("Recipe divided/reset by 3 or triple.");
                                     Console.ResetColor();
                                 }
                                     break;

@@ -44,15 +44,6 @@
                 Console.WriteLine($"{i + 1}. {steps[i]}");
             }
         }
-
-        // Method to scale the recipe quantities by the specified factor
-        public void Scale(double factor)
-        {
-            foreach (var ingredient in ingredients)
-            {
-                ingredient.Quantity *= (decimal)factor;
-            }
-        }
         public void Convert()
         {
             double teaSpoon = 0;
@@ -61,6 +52,16 @@
             
             
         }
+        
+        // Method to scale the recipe quantities by the specified factor
+        public void Scale(double factor)
+        {
+            foreach (var ingredient in ingredients)
+            {
+                ingredient.Quantity *= (decimal)factor;
+            }
+        }
+        
 
 
         // Method to reset the recipe quantities to their original values
